@@ -6,14 +6,14 @@ import domain.*;
 import service.*;
 import serviceImpl.*;
 enum AccountButt{
-	EXIT,INPUT
+	EXIT,INPUT,LIST
 }
 public class AccountController {
 	public static void main(String[] args) {
 		Account acc = null;
 		AccountService service = new AccountServiceImpl();
 	AccountButt[] Buttons= {
-			AccountButt.EXIT,AccountButt.INPUT
+			AccountButt.EXIT,AccountButt.INPUT,AccountButt.LIST
 	};
 	while(true) {
 		
@@ -28,7 +28,8 @@ public class AccountController {
 					JOptionPane.showInputDialog("아이디를 입력하세요."),
 					JOptionPane.showInputDialog("이름을 입력하세요"),
 					JOptionPane.showInputDialog("패스워드를 입력하세요")
-					));
+					));break;
+		case LIST :
 			
 			JOptionPane.showMessageDialog(null,service.showResult());
 			

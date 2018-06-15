@@ -7,8 +7,8 @@ import domain.Account;
 import service.*;
 
 public class AccountServiceImpl implements AccountService{
-	Account[] list;
-	int count;
+	private Account[] list;
+	private int count;
 	public AccountServiceImpl() {
 		
 		list=new Account[10];
@@ -16,7 +16,7 @@ public class AccountServiceImpl implements AccountService{
 	}
 	@Override
 	public Account[] list() {
-		// TODO Auto-generated method stub
+		
 		return list;
 	}
 
@@ -28,30 +28,30 @@ public class AccountServiceImpl implements AccountService{
 
 	@Override
 	public int deposit(String money, int restMoney) {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
 	@Override
 	public int withdraw(String money, int restMoney) {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
 	@Override
 	public String createAccountNun() {
-		String can="";
+		
 		int[] num=new int[3];
 		for(int i=0; i<3; i++) {
 			num[i]=(int)(Math.random()*900)+100;
 		}
-		can=num[0]+"-"+num[1]+"-"+num[2];
-		return can;
+		
+		return num[0]+"-"+num[1]+"-"+num[2];
 	}
 
 	@Override
 	public String craeteRandom(int start, int end) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
