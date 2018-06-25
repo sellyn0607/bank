@@ -11,11 +11,11 @@ public class MemberBean {
 		this.email = email;
 	}
 
-	/*@Override
+	@Override
 	public String toString() {
 		return "회원정보 [아이디:" + uid + ", 비밀번호:" + pass + ", 이름:" + name + ", 주민번호:" + ssn + ", 주소:" + addr
 				+ ", 전화번호:" + phone + ",이메일:"+email+"]\n";
-	}*/
+	}
 
 	public String getUid() {
 		return uid;

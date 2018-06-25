@@ -10,12 +10,12 @@ public class AccountBean {
 	public final static String DEPOSIT_SUCCESS="입금성공";
 	public final static String DEPOSIT_FAIL="적합한 입력값이 아님";
 	protected int money;
-	protected String uid,accountType,name,pass,accountNo,createdate,newPass;
+	protected String uid,accountType,name,pass,accountNum,createdate,newPass;
 	
 	public String toString() {
 		
 		return String.format("%s\n%s\n아이디 : %s\n패스워드 : %s \n계좌번호 : %s \n이름 : %s \n잔액 : %d 원 \n생성일 : %s \n",
-				BANK_NAME,ACCOUNT_TYPE,uid,pass,accountNo,name,money,createdate);
+				BANK_NAME,ACCOUNT_TYPE,uid,pass,accountNum,name,money,createdate);
 	}
 	
 	public void setNewPass(String newPass) {
@@ -39,8 +39,8 @@ public class AccountBean {
 	public void setPass(String pass) {
 		this.pass=pass;
 	}
-	public void setAccountNo(String accountNo) {
-		this.accountNo=accountNo;
+	public void setAccountNum(String accountNum) {
+		this.accountNum=accountNum;
 	}
 	public void setCreateDate(String createdate) {
 		this.createdate=createdate;
@@ -57,8 +57,8 @@ public class AccountBean {
 	public String getPass() {
 		return pass;
 	}
-	public String getAccountNo() {
-		return accountNo;
+	public String getAccountNum() {
+		return accountNum;
 	}
 	public String getCreateDate() {
 		return createdate;
